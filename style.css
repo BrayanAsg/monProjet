@@ -1,56 +1,137 @@
-body{
-  display: grid;
-  grid-template-columns: repeat(12,1fr);
-  grid-template-rows: repeat(6,auto);
+body {
+  margin: 0;
+  background-color: #dde4ed;
+
 }
-header{
-  grid-row: 1;
-  grid-column: 1 /span 12;
+/*******************************************************************************************
+                                    HEADER
+********************************************************************************************/
+header {
+  margin-left: 14vh;
+  text-align: center;
+  background: #151516;
+  color: #dde4ed;
+  font-size: 30px;
+  display: flex;
+  justify-content:space-evenly;
 }
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: red;
-  }
+.buttonConnexion {
+  background-color: #151516;
+  color: white;
+  padding: 1%;
+  text-decoration: none;
+}
+.buttonConnexion:hover{
+  background-color: #56f3f6;
+}
+/*******************************************************************************************
+                                    SIDE LEFT BAR
+********************************************************************************************/
+/* Fixed sidenav, full height */
+.sidenav {
+  height: 100%;
+  width: 14vh;
+  position: fixed;
+  z-index: 1; 
+  top: 0;
+  left: 0;
+  background-color: #161f28;
+  overflow-x: hidden;
+  padding-top: 5vh;
+  display: flex;
+  flex-direction: column;
+}
+header > a > img{
+  width: 18%;
+}
+
+/* Style the sidenav links and the dropdown button */
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+/* On mouse-over */
+.sidenav a:hover {
+  background-color: #56f3f6;
+}
+.sidenav a{
+  margin-top: 0.85em;
+  padding-top: 4em;
+  padding-bottom: 4em;
+}
+
+/*******************************************************************************************
+                                    FOOTER
+********************************************************************************************/
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #151516;
+  color: white;
+  text-align: center;
+  display: flex;
+  margin-left: 14vh;
+}
+footer> a > img {
+  width:18%;
+}
+/*******************************************************************************************
+                                    FORMULAIRE D'INSCRIPTION
+********************************************************************************************/
+input[type=text],input[type=pseudo],input[type=email],input[type=password], select {
+  width: 100%;
+  padding: 1% 2%;
+  margin: 1% 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #56f3f6;
+  color: white;
+  padding: 1% 2%;
+  margin: 1% 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
   
-  li {
-    float: left;
-  }
+input[type=submit]:hover {
+  background-color: #5669f6;
+}
   
-  li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
+.inscription {
+  border-radius: 1%;
+  background-color: #f2f2f2;
+  padding: 2%;
+}
+/*******************************************************************************************
+                                    FORMULAIRE D'INSCRIPTION
+********************************************************************************************/
+
+/*******************************************************************************************
+                                    MAIN ACCUEIL
+********************************************************************************************/
+main {
+  margin-top: 2vh;
+  margin-left: 14vh;
+}
+.mainAccueil {
   
-  li a:hover:not(.active) {
-    background-color: gold;
-  }
-  
-  .active {
-    background-color: red;
-  }
-  footer{
-    grid-row: 6;
-    grid-column: 1/span 12;
-    background-color:red ;
-    padding: 5em  ;
-    color: white;
-  }
-  main{
-    grid-column:4 / 8 ;
-    grid-row:3/span 5;
-    height: 1400px;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: (5,auto);
-  }
-  .formulaire{
-    grid-column: 2;
-    grid-row: 2;
-    width: 200px;
-  }
+}
+
